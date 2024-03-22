@@ -1,8 +1,117 @@
-body {
+/* Universal Style */
+body, a{
     font-family: 'Open Sans';
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+h3 {
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+h2, h4 {
+    line-height: 1.7;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid seashell;
+}
+header > img {
+    max-height: 50px;
+}
+li {
+    display: inline-block;
+    padding: 10px 5px 5px;
+    flex-shrink: 2;
+}
+
+/* Mission Section */
+#mission-section {
+    background-image: url('../images/mission-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.mission-headline {
+    background-color: black;
+    width: 100%;
+    padding: 12px;
+}
+
+/* Feature Section */ 
+#feature-section {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 70px 20px;
+}
+.tea-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.image-container {
+    padding: 10px;
+}
+.image-container > img {
+    height: 200px;
+    width: 300px;
+}
+
+/* Locations Section */
+#location-section {
+    background-image: url('../images/locations-background.jpeg');
+    background-size: cover;
+    background-position: 20% 20%;
+    min-height: 700px;
+}
+#location-section > h2 {
+    width: 100%;
+    padding: 70px 0 0;
+}
+.location-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.location-card {
+    width: 300px;
+    background-color: black;
+    margin: 15px 40px;
+    padding: 20px;
+    opacity: 1;
+}
+.location-card > p {
+    padding: 30px 0px;
+}
+
+/* Footer Section */ 
+h5 {
+    padding: 40px 0 15px;
+}
+#copyright {
+    padding-left: 20px;
+    text-align: left;
+}
+/* Media Queries */
+@media only screen and (max-width: 555px)
+{
+    a, h4 {
+        font-size: 17px;
+    }
+    
 }
